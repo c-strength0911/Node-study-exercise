@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function makeAmericano(){
+            var ame = 
+            document.getElementById('here').innerHTML = ame;
+        }
+        function makeIcetea(){
+            var ice =
+            document.getElementById('here').innerHTML = ice;
+        }
+    </script>
+    <h2>음료 자판기</h2>
+    <ul id="menu">
+        <li>아메리카노</li>
+        <li>아이스티</li>
+    </ul>
+    <button onclick="makeAmericano()">아메리카노 주문</button>
+    <button onclick="makeIcetea()">아이스티 주문</button>
+    <p id="here"></p>
+</body>
+</html>
