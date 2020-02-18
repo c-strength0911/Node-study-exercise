@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" value="버튼 1" id="button1">
+    <input type="button" value="버튼 2" id="button2">
+    <input type="button" value="버튼 3" id="button3">
+    <script>
+        var e1 = document.getElementById('button1');
+        var e2 = document.getElementById('button2');
+        var e3 = document.getElementById('button3');
+        function eventFunction(event) {
+            switch (event.target.id) {
+                case 'button1':
+                    alert("버튼 1을 누름");
+                    break;
+                case 'button2':
+                    alert("버튼 2을 누름");
+                    break;
+                case 'button3':
+                    alert("버튼 3을 누름");
+                    break;
+            }
+        }
+        e1.addEventListener('click', eventFunction);
+        e2.addEventListener('click', eventFunction);
+        e3.addEventListener('click', eventFunction);
+    </script>
+</body>
+
+</html>
